@@ -2,7 +2,8 @@
   "name": "fusion-starter",
   "private": true,
   "type": "module",
-  "homepage": "https://ragasudhan1718.github.io/myportfolio_uiuxdesigner",
+  "homepage": "https://ragasudhan1718.github.io/portfolio_my_uiuxdesigner/",
+
   "pkg": {
     "assets": [
       "dist/spa/*"
@@ -13,16 +14,14 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "npm run build:client && npm run build:server",
+    "build": "npm run build:client",
     "build:client": "vite build",
-    "build:server": "vite build --config vite.config.server.ts",
     "start": "node dist/server/node-build.mjs",
     "test": "vitest --run",
     "format.fix": "prettier --write .",
     "typecheck": "tsc",
     "predeploy": "npm run build:client",
     "deploy": "gh-pages -d dist"
-    "typecheck": "tsc"
   },
   "dependencies": {
     "dotenv": "^17.2.1",
@@ -70,7 +69,6 @@
     "@types/react-dom": "^18.3.7",
     "@types/three": "^0.176.0",
     "@vitejs/plugin-react-swc": "^4.2.2",
-    "@vitejs/plugin-react-swc": "^4.0.0",
     "autoprefixer": "^10.4.21",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -105,9 +103,5 @@
     "vite": "^7.1.2",
     "vitest": "^3.2.4"
   },
-<<<<<<< HEAD
   "packageManager": "pnpm@10.14.0"
-=======
-  "packageManager": "pnpm@10.14.0+sha512.ad27a79641b49c3e481a16a805baa71817a04bbe06a38d17e60e2eaee83f6a146c6a688125f5792e48dd5ba30e7da52a5cda4c3992b9ccf333f9ce223af84748"
->>>>>>> 657a03230f286efbe1c0b7d38052f025b0c3b094
 }
