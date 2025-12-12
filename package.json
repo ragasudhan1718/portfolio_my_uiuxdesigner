@@ -3,7 +3,6 @@
   "private": true,
   "type": "module",
   "homepage": "https://ragasudhan1718.github.io/portfolio_my_uiuxdesigner/",
-
   "pkg": {
     "assets": [
       "dist/spa/*"
@@ -14,13 +13,9 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "npm run build:client",
-    "build:client": "vite build",
-    "start": "node dist/server/node-build.mjs",
-    "test": "vitest --run",
-    "format.fix": "prettier --write .",
-    "typecheck": "tsc",
-    "predeploy": "npm run build:client",
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
@@ -53,7 +48,7 @@
     "@radix-ui/react-slot": "^1.2.3",
     "@radix-ui/react-switch": "^1.2.5",
     "@radix-ui/react-tabs": "^1.1.12",
-    "@radix-ui/react-toast": "^1.2.14",
+    "@radix-ui/react-toast": "^1.2.15",
     "@radix-ui/react-toggle": "^1.1.9",
     "@radix-ui/react-toggle-group": "^1.1.10",
     "@radix-ui/react-tooltip": "^1.2.7",
@@ -68,6 +63,7 @@
     "@types/react": "^18.3.23",
     "@types/react-dom": "^18.3.7",
     "@types/three": "^0.176.0",
+    "@vitejs/plugin-react": "^5.1.2",
     "@vitejs/plugin-react-swc": "^4.2.2",
     "autoprefixer": "^10.4.21",
     "class-variance-authority": "^0.7.1",

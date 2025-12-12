@@ -14,7 +14,7 @@ const projects = [
     tags: ["Agriculture", "Weather", "Mobile App"],
     link: "/project/agroweather-app",
   },
-  {
+  /*{
     id: 2,
     title: "E-Commerce Platform",
     category: "Web Design",
@@ -23,7 +23,7 @@ const projects = [
     image:
       "https://images.unsplash.com/photo-1516321318423-f06f70570ec0?w=600&h=400&fit=crop",
     tags: ["Web", "E-Commerce", "UX Strategy"],
-  },
+  },*/
   {
     id: 3,
     title: "Branding",
