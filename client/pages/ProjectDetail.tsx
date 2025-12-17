@@ -20,7 +20,7 @@ export default function ProjectDetail() {
       solution:
         "Designed a dedicated agricultural weather app with large, easy-to-read icons, high-contrast colors for outdoor visibility, and offline capability. Implemented visual alerts for critical farming decisions (rain forecasts before pesticide spraying) and real-time soil moisture monitoring. The interface prioritizes simplicity with minimal text and color-coded information.",
       image:
-        "https://cdn.builder.io/api/v1/image/assets%2F61dacd5c91b34b0ba55d4b6c49c26bc5%2F963c32138a8347f2a46e9e0b59a480f1?format=webp&width=800",
+        "\assets\projects\agroweather",
       mockupScreens: [
         {
           title: "Weather Dashboard",
