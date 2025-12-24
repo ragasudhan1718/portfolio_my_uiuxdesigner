@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import { Menu, X, Download } from "lucide-react";
 
 export default function Header() {
@@ -15,12 +15,18 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navLinks = [
+  /*const navLinks = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
     { href: "/#portfolio", label: "Projects" },
     { href: "/contact", label: "Contact" },
-  ];
+  ];*/
+  const navLinks = [
+  { href: "#home", label: "Home" },
+  { href: "#projects", label: "Projects" },
+  { href: "#skills", label: "Skills" },
+  { href: "#contact", label: "Contact" },
+];
 
   return (
     <header
@@ -49,14 +55,22 @@ export default function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
-              <Link
+              /*<Link
                 key={link.href}
                 to={link.href}
                 className="text-sm font-medium text-foreground/70 hover:text-foreground transition-colors duration-300 relative group"
               >
                 {link.label}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-secondary group-hover:w-full transition-all duration-300"></span>
-              </Link>
+              </Link>*/
+			  <a
+                 key={link.href}
+                 href={link.href}
+                 className="text-sm font-medium text-foreground/70 hover:text-foreground transition-colors duration-300 relative group"
+              >
+                {link.label}
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-secondary group-hover:w-full transition-all duration-300"></span>
+              </a>
             ))}
           </nav>
 
@@ -94,14 +108,22 @@ export default function Header() {
         {mobileMenuOpen && (
           <nav className="md:hidden pb-4 animate-slide-down">
             {navLinks.map((link) => (
-              <Link
+              /*<Link
                 key={link.href}
                 to={link.href}
                 className="block py-2 text-foreground/70 hover:text-foreground transition-colors duration-300"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {link.label}
-              </Link>
+              </Link>*/
+			  <a
+                 key={link.href}
+                 href={link.href}
+                 className="block py-2 text-foreground/70 hover:text-foreground transition-colors duration-300"
+                 onClick={() => setMobileMenuOpen(false)}
+              >
+                {link.label}
+              </a>
             ))}
             <a
               href="/Ragasudhan_Resume.pdf"

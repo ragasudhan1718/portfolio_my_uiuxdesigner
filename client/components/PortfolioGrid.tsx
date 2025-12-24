@@ -10,7 +10,7 @@ const projects = [
     description:
       "Farmer-focused weather and crop advisory app with real-time alerts and offline capability",
     image:
-      "https://cdn.builder.io/api/v1/image/assets%2F61dacd5c91b34b0ba55d4b6c49c26bc5%2Fbe9da917ef564f83a50a66220ddae385?format=webp&width=800",
+      "/assets/projects/agroweather/cover.png",
     tags: ["Agriculture", "Weather", "Mobile App"],
     link: "/project/agroweather-app",
   },
@@ -42,7 +42,7 @@ const projects = [
     description:
       "Secure and intuitive authentication interface with form validation",
     image:
-      "https://cdn.builder.io/o/assets%2F61dacd5c91b34b0ba55d4b6c49c26bc5%2F1ff01ce65d7b4144b274e8c332be869a?alt=media&token=70804565-1537-4ce1-a432-984e14cad36e&apiKey=61dacd5c91b34b0ba55d4b6c49c26bc5",
+      "/assets/projects/loginpage/Login_page.png",
     tags: ["Authentication", "UI Design", "Security"],
     link: "/project/login-page",
   },
