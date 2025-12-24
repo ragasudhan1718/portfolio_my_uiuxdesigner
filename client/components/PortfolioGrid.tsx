@@ -12,7 +12,7 @@ const projects = [
     image:
       "/assets/projects/agroweather/cover.png",
     tags: ["Agriculture", "Weather", "Mobile App"],
-    link: "/project/agroweather-app",
+    link: "https://www.behance.net/gallery/232516315/AgroWeatherMonilwApp",
   },
   /*{
     id: 2,
@@ -33,9 +33,9 @@ const projects = [
     image:
       "https://cdn.builder.io/api/v1/image/assets%2F61dacd5c91b34b0ba55d4b6c49c26bc5%2F6404304a62f54b8ab35cb7e3e93b1689?format=webp&width=800",
     tags: ["Branding", "Visual Identity", "Design System"],
-    link: "/project/branding",
+    link: "https://www.behance.net/portfolio/editor?project_id=240508725",
   },
-  {
+  /*{
     id: 4,
     title: "Login Page Design",
     category: "App Design",
@@ -45,7 +45,7 @@ const projects = [
       "/assets/projects/loginpage/Login_page.png",
     tags: ["Authentication", "UI Design", "Security"],
     link: "/project/login-page",
-  },
+  },*/
   {
     id: 5,
     title: "Fin Converter (MT-MX)",
@@ -54,7 +54,7 @@ const projects = [
     image:
       "https://cdn.builder.io/api/v1/image/assets%2F61dacd5c91b34b0ba55d4b6c49c26bc5%2Ffe1001e95f8149c0aea68c68d1be6c3a?format=webp&width=800",
     tags: ["Web App", "Conversion", "File Management"],
-    link: "/project/fin-converter",
+    link: "https://www.behance.net/gallery/230514432/Converter-Web-application-(MT-MX-messages)",
   },
   {
     id: 6,
@@ -65,7 +65,7 @@ const projects = [
     image:
       "https://cdn.builder.io/api/v1/image/assets%2F61dacd5c91b34b0ba55d4b6c49c26bc5%2F0dd0b5f1f993473e9ec3ee6e73ec441d?format=webp&width=800",
     tags: ["Finance", "Dashboard", "UX Design"],
-    link: "/project/internet-banking",
+    link: "https://www.behance.net/gallery/231327951/Loan-Management-Dashboard-Design",
   },
 ];
 
@@ -97,7 +97,8 @@ export default function PortfolioGrid() {
               style={{ animationDelay: `${index * 0.1}s` }}
               onMouseEnter={() => setHoveredId(project.id)}
               onMouseLeave={() => setHoveredId(null)}
-              onClick={() => project.link && navigate(project.link)}
+			  onClick={() => window.open(project.link, "_blank")}
+              //onClick={() => project.link && navigate(project.link)}
             >
               <div className="relative overflow-hidden rounded-xl bg-card border border-border transition-all duration-300 h-full">
                 <div className="grid grid-cols-1 md:grid-cols-5 gap-0">
