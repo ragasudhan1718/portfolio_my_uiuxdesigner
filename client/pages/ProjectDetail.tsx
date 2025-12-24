@@ -27,7 +27,7 @@ export default function ProjectDetail() {
           description:
             "Main weather dashboard displaying current conditions, temperature, and soil moisture information.",
           image:
-            "https://cdn.builder.io/api/v1/image/assets%2F61dacd5c91b34b0ba55d4b6c49c26bc5%2Fab2dae8900e0428baf0800a4e3da60ca?format=webp&width=800",
+            "\assets\projects\agroweather",
           type: "mobile",
         },
         {
