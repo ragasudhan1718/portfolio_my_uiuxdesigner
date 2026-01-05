@@ -19,9 +19,14 @@ import CTASection from "@/components/CTASection";
 }*/
 export default function Index() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    //<div className="min-h-screen bg-background text-foreground">
+	<div className="min-h-screen animated-bg text-foreground">
       <Header />
       <HeroSection />
+	  
+	    <section id="home">
+        <HeroSection />
+      </section>
 
       <section id="projects">
         <PortfolioGrid />

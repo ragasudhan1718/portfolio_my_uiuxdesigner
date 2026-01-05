@@ -126,7 +126,7 @@ export default function Header() {
               </a>
             ))}
             <a
-              href="/Ragasudhan_Resume.pdf"
+              href="/portfolio_my_uiuxdesigner/Ragasudhan_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 mt-4 px-4 py-2 border border-primary text-primary rounded-lg font-medium text-center"

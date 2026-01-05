@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 export default function HeroSection() {
   const [displayedText, setDisplayedText] = useState("");
-  const fullText = "UI/UX Designer";
+  const fullText = "UI/UX | website Designer";
 
   useEffect(() => {
     let index = 0;
